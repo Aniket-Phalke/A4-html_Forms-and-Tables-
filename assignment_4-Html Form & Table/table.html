@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        #tableheading {
+          border:1px ;
+          border-style: inset;
+          border-width: medium thick 20px;
+          width: 100%;
+          height: 20vh;
+          border-color: brown;    
+          text-align:center;
+          padding: 15px;
+          background-color: orange ;
+        }
+        #tablecontent{
+          border:1px ;
+          border-style: inset;
+          border-width: medium thick 20px;
+          width: 100%;
+          height: 80vh;
+          border-color: rgb(165, 153, 42);    
+          text-align:center;
+          font-size: 50px;
+          border-spacing: 10px;
+        }
+       
+        th{
+            border-style: ridge;
+            border-color: rgb(12, 12, 12);
+            font-size:30px;
+        }
+       td{
+        border-style: solid;
+            border-color: rgb(228, 12, 12);
+            width: 10%;
+       }
+       tr:nth-last-child(even) {
+        background-color: hwb(0 72% 25%);
+    }  
+    
+      
+        
+        </style>
+</head>
+
+<body>
+    <table id="tableheading">
+        <thead><h1>Table Content</h1></thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+        </tr>
+    </table>
+        <table id="tablecontent">
+        <tr>
+            <th rowspan="4">G<cowspan="4"/th>
+            <td colspan="4">H</td>
+            <td>python</td>
+            <td><img src="pythonimg.jpg" width="60px" height="60px"></td>
+            <td><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">link1</a></td>
+            <td><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">
+                <img src="images/pythonimg.jpg"alt="python info" style="width:42px;height:42px;"></a></td>
+            </div>
+        </tr>
+        <tr>
+            <th rowspan="3">M</th>
+            <td colspan="3">N</td>
+            <td>Java</td>
+            <td><img src="javaimg.jpg" width="60px" height="60px"></td>
+            <td><a href="https://en.wikipedia.org/wiki/Java_(programming_language)">link2</a></td>
+            <td><a href="https://en.wikipedia.org/wiki/Java_(programming_language)">
+                <img src="images/javaimg.jpg"alt="python info" style="width:42px;height:42px;"></a></td>
+        </tr>
+        <tr>
+            <th rowspan="2">S</th>
+            <td colspan="2">T</td>
+            <td>php</td>
+            <td><img src="phpimg.jpg" width="60px" height="60px"></td>
+            <td><a href="https://en.wikipedia.org/wiki/PHP">link3</a></td>
+            <td><a href="https://en.wikipedia.org/wiki/PHP">
+            <img src="phpimg.jpg"alt="python info" style="width:42px;height:42px;"></a></td>
+        </tr>
+        <tr>
+            <th>Y</th>   
+            <td>Z</td>
+            <td>.net</td>
+            <td><img src="dotnetimg.jpg" width="60px" height="60px"></td>
+            <td><a href="https://en.wikipedia.org/wiki/.NET">link4</a></td>
+            <td><a href="https://en.wikipedia.org/wiki/.NET">
+                <img src="images/dotnetimg.jpg"alt="python info" style="width:42px;height:42px;"></a></td>
+        
+        </tr>
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <style>
+      .formcontent{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding-left: 20%;
+    font-style: normal;
+    font-size: 20px;
+}
+input[type=submit] {
+width: 30%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor:pointer;
+
+}
+input[type=text]{
+width:25%;
+height: 20px;
+font-size: 15px;
+border: 1px solid black;
+border-radius: 4px;
+padding-left: 10px;
+background-color: transparent;
+}
+input[type=email]{
+width:25%;
+height: 20px;
+font-size: 15px;
+border: 1px solid black;
+border-radius: 4px;
+background-color: transparent;
+}
+#h1tag{
+color:gray;
+text-align: center;
+padding-right: 50%;
+}
+#selectuniversity,#selectfaculty,#selectyear{
+width:26%;
+height: 20px;
+font-size: 15px;
+border: 1px solid black;
+border-radius: 4px;
+background-color: transparent;
+}
+
+
+input[type="checkbox"]{
+    accent-color: green;
+}
+input[type="radio"]{
+    accent-color: red;
+}
+
+body{
+    background-color: slategray;
+   
+}
+.formcontent{
+
+  background-color: snow;
+
+  border: 1px solid;
+  overflow: auto;
+}
+  
+
+
+
+
+ 
+    </style>
+</head>
+<body background="images/frmbag.jpg">
+    <div class="formcontent">
+      <section class="overlay" aria-hidden="true">
+    <form action="xyz.js">
+        <h1 id="h1tag">Job Fair Registration Form</h1>
+        <label fro="label1">Full Name</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="text"name="first"placeholder="first name"><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input type="text"name="last"placeholder="last name"><br><br>
+        <label fro="univers">University</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <select id="selectuniversity">
+            <option value="1">pune</option>
+            <option value="2">aurangabad</option>
+            <option value="3">other</option>
+          </select><br><br>
+          <label for="if other">If Other - Please Specify</label>&nbsp;
+          <input type="text"name="ifother"placeholder="other info"><br><br>
+          <label fro="faculty">faculty</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp
+        <select id="selectfaculty">
+            <option value="1">Science</option>
+            <option value="2">Arts</option>
+            <option value="3">other</option>
+          </select><br><br>
+          <label for="if other">If Other - Please Specify</label>&nbsp
+          <input type="text"name="ifother"placeholder="if other"><br><br>
+          <label fro="acadimic year">Academic year of PhD</label>&emsp;
+        <select id="selectyear">
+            <option value="1">1st</option>
+            <option value="2">2nd</option>
+            <option value="3">3rd</option>
+            <option value="3">other</option>
+          </select><br><br>
+          <label for="work">Where would you like to <br>work</label>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp13;
+          <input type="checkbox" class="check" id="Industeries" name="fac" value="Industeries">
+        <label for="Industeries"> Industeries</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp13;&emsp;&emsp;
+        <input type="checkbox" id="Consultancy" name="fac" value="Consultancy">
+        <label for="Consultancy"> Consultancy<r/label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp13;&emsp;&emsp;
+        <input type="checkbox" id="gov" name="fac" value="gov">
+        <label for="gov"> Government</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp13;&emsp;&emsp;
+        <input type="checkbox" id="other" name="fac" value="other">
+        <label for="other"> other</label><br><br>
+        <label for="email">Confirm E-mail &emsp;&emsp;&emsp;&nbsp</label><input type="email" id="email" name="email"placeholder="email"><br><br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp13;&emsp;&emsp;&emsp13;&emsp;&emsp;&nbsp;&nbsp;
+        <input type="email" id="emailconf" name="emailconf"placeholder="confirm email"><br><br>
+        <label for="work">Would you like to sign<br> up to our newsletter ?</label>&emsp;
+        <input type="radio" id="yes" name="yes" value="HTML">
+       <label for="yes">Yes</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <input type="radio" id="yes" name="yes" value="yes">
+       <label for="no">No,I have already sign up</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+       <input type="radio" id="yes" name="yes" value="no">
+       <label for="javascript">No</label><br><br>
+    <input type="submit" value="submit">
+  </section>
+</div>
+    </form>
+</body>
+</html>
